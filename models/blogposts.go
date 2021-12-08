@@ -243,7 +243,7 @@ func DeleteBlogPost(id uint64) (string, error) {
 		config.Log.WithFields(logrus.Fields{
 			"app":      "redis",
 			"func":     "updateBlogPost",
-			"redisKey": "blogPost:all",
+			"redisKey": redisKey,
 		}).Warn(redisErr)
 	}
 	redisDelErr := config.Redis.Del(config.Redis.Context(), "blogPost:all").Err()

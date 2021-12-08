@@ -18,6 +18,9 @@ This has been developed with containers in mind and is configured using environm
 
 ## To do
 
+### Testing
+- [ ] All code needs tests! *IMPORTANT*
+
 ### Tags
 - [ ] Implement Tags model  
 
